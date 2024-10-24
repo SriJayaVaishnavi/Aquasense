@@ -2,16 +2,16 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getDatabase, ref, set, onValue } from "firebase/database";
 
-// Your Firebase configuration
+// Firebase configuration using environment variables
 const firebaseConfig = {
-  apiKey: "AIzaSyAPpVQaONRe8WcXIDqFwDFv2EYX9FjvPoM",
-  authDomain: "aquasense-4334c.firebaseapp.com",
-  databaseURL: "https://aquasense-4334c-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "aquasense-4334c",
-  storageBucket: "aquasense-4334c.appspot.com",
-  messagingSenderId: "545893772673",
-  appId: "1:545893772673:web:37eee7d91bf098fc268c80",
-  measurementId: "G-MWZ89TFCBH"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase

@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -7,11 +7,11 @@ body {
 }
 
 h1 {
-  color: #007BFF; /* Primary color for headings */
+  color: #007BFF; 
 }
 
 h3 {
-  color: #555; /* Secondary color for subheadings */
+  color: #555; 
 }
 
 /* Navigation Bar Styles */

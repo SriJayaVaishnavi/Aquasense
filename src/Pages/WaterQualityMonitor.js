@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { database, ref, onValue } from "../firebase.js";
-import { Line } from "react-chartjs-2"; // Import Chart.js for plotting
+import { Line } from "react-chartjs-2";
 import {
     Chart as ChartJS,
     LineElement,
@@ -11,7 +11,7 @@ import {
     Legend
 } from 'chart.js';
 
-// Register the necessary components
+
 ChartJS.register(LineElement, PointElement, LinearScale, CategoryScale, Tooltip, Legend);
 
 const WaterQualityMonitor = () => {

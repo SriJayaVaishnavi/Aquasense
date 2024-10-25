@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { auth, database } from '../firebase.js'; // Ensure this path is correct
+import { auth, database } from '../firebase.js'; 
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { ref, set } from 'firebase/database';
 //import './style.css'; // Make sure to import your CSS file
@@ -19,12 +19,12 @@ const Register = () => {
 
 
         try {
-            // Register the user with Firebase Authentication
+           
             const userCredential = await createUserWithEmailAndPassword(auth, email, password);
             const user = userCredential.user; // Get the user object
 
 
-            // Now store additional user data in Realtime Database
+            
             await set(ref(database, 'Users/' + user.uid), {
                 email,
                 waterPurifierID,
@@ -34,7 +34,7 @@ const Register = () => {
             alert('Registration successful!'); // Show success message
 
 
-            // Optionally reset the form fields
+            
             setEmail('');
             setPassword('');
             setWaterPurifierID('');

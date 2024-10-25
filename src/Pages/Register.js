@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { auth, database } from '../firebase.js'; 
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { ref, set } from 'firebase/database';
-//import './style.css'; // Make sure to import your CSS file
+//import './style.css'; 
 
 
 const Register = () => {

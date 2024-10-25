@@ -1,33 +1,33 @@
 /* NavBar Styles */
 header {
-    background-color: #007BFF; /* Blue background for the header */
-    padding: 10px 0; /* Vertical padding for the header */
+    background-color: #007BFF;
+    padding: 10px 0; 
 }
 
 nav {
-    display: flex; /* Flexbox for horizontal layout */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: flex; /* Flexbox for horizontal list */
-    gap: 20px; /* Space between list items */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    gap: 20px; 
 }
 
 li {
-    margin: 0; /* Remove default margin for list items */
+    margin: 0; 
 }
 
 a {
-    color: white; /* White text color for links */
-    text-decoration: none; /* Remove underline from links */
-    padding: 10px 15px; /* Padding for clickable area */
-    border-radius: 4px; /* Rounded corners for links */
-    transition: background-color 0.3s; /* Smooth transition for hover */
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 15px;
+    border-radius: 4px; 
+    transition: background-color 0.3s; 
 }
 
 a:hover {

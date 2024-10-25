@@ -13,7 +13,7 @@ import {
 } from 'chart.js';
 import { getSensorsData } from '../firebase.js';
 
- // Adjust the import according to your project structure
+
 
 ChartJS.register(
     CategoryScale,
@@ -45,12 +45,12 @@ const Graph = () => {
         fetchData();
     }, []);
 
-    // If loading, show a loading indicator
+   
     if (loading) {
         return <div>Loading...</div>;
     }
 
-    // If there's no data, show a message
+   
     if (!sensorData.length) {
         return <div>No data available for the graph.</div>;
     }

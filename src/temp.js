@@ -22,11 +22,11 @@ const predictNext = (x, y, n) => {
 };
 
 const makePredictions = (tds, turbidity) => {
-    // Dummy date array (0 to 29 for simplicity)
+   
     const dateArray = Array.from({ length: 30 }, (_, i) => i);
     const currentIndex = dateArray.length - 1; // Current date index
 
-    // Use TDS and turbidity for predictions (simple linear assumption)
+    //Linear Regression
     const predictedTDS = predictNext(dateArray, Array.from({ length: 30 }, (_, i) => tds + i * 5), currentIndex); // Sample TDS data
     const predictedTurbidity = predictNext(dateArray, Array.from({ length: 30 }, (_, i) => turbidity + i), currentIndex); // Sample turbidity data
 

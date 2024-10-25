@@ -3,47 +3,51 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
+  background-image: url('./new_background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: #333;
 }
 
 h1 {
-  color: #007BFF; 
+  color: #007BFF;
 }
 
 h3 {
-  color: #555; 
+  color: #555;
 }
 
-/* Navigation Bar Styles */
+
 .navbar {
-  background-color: #007BFF; /* Blue background */
+  background-color: #007BFF; 
   padding: 10px;
   display: flex;
-  justify-content: space-around; /* Distribute space evenly */
+  justify-content: space-around;
   align-items: center;
-  width: 100%; /* Cover the entire width */
+  width: 100%; 
 }
 
 .navbar a {
-  color: white; /* White text color */
+  color: white; 
   text-decoration: none;
-  padding: 10px 20px; /* Padding for buttons */
-  border-radius: 4px; /* Rounded corners */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  padding: 10px 20px; 
+  border-radius: 4px; 
+  transition: background-color 0.3s; 
 }
 
 .navbar a:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3;
 }
 
-/* Main Content Styles */
+
 .App {
   padding: 20px;
   max-width: 800px;
   margin: auto;
 }
 
-/* Water Quality Monitor Styles */
+
 .water-quality-chart {
   background-color: #fff;
   border-radius: 8px;
@@ -52,7 +56,7 @@ h3 {
   margin: 20px 0;
 }
 
-/* Form Styles */
+
 form {
   display: flex;
   flex-direction: column;
@@ -85,7 +89,7 @@ button:hover {
   background-color: #0056b3;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 600px) {
   .navbar {
       flex-direction: column;

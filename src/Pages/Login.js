@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { auth } from '../firebase.js'; // Ensure this path is correct
+import { auth } from '../firebase.js'; 
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { database } from '../firebase.js'; // Import the database
-import { ref, get } from 'firebase/database'; // Import necessary functions for database interaction
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { database } from '../firebase.js'; 
+import { ref, get } from 'firebase/database'; 
+import { useNavigate } from 'react-router-dom'; 
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -14,14 +14,14 @@ const Login = () => {
 
     const handleLogin = async (e) => {
         e.preventDefault();
-        setError(''); // Clear any previous error
+        setError(''); 
 
         try {
             // Sign in the user with Firebase Authentication
             const userCredential = await signInWithEmailAndPassword(auth, email, password);
             const user = userCredential.user; // Get the user object
 
-            // Optionally, you can check if the user's water purifier ID is correct
+            
             const userRef = ref(database, 'Users/' + user.uid); // Get reference to the user in the database
             const snapshot = await get(userRef); // Fetch the user data from the database
 

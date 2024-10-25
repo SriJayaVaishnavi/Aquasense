@@ -80,7 +80,7 @@ const Temp = () => {
 
     return (
         <div className="App">
-            <h1>Water Quality Monitor</h1>
+            <h1>Water analysis report</h1>
             <div>
                 <h2>Turbidity:</h2>
                 {turbidity !== null ? (

@@ -1,11 +1,11 @@
 import NavBar from './NavBar.js';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Register from './Pages/Register.js'; // Adjust the path accordingly
-import WaterQualityMonitor from './Pages/WaterQualityMonitor.js'; // Adjust the path accordingly
-import Temp from './temp.js'; // Adjust the path accordingly
+import Register from './Pages/Register.js'; 
+import WaterQualityMonitor from './Pages/WaterQualityMonitor.js'; 
+import Temp from './temp.js'; 
 import Login from './Pages/Login.js';
-import Home from './Home.js'; // Import the new Home component
+import Home from './Home.js'; 
 import './App.css';
 import './Style.css';
 

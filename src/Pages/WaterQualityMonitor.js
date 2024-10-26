@@ -19,7 +19,7 @@ const WaterQualityMonitor = () => {
     const [timestamps, setTimestamps] = useState([]);
 
     useEffect(() => {
-        const sensorsRef = ref(database, "Sensors");
+        const sensorsRef = ref(database, "Sensor_details"); 
         onValue(sensorsRef, (snapshot) => {
             const data = snapshot.val();
             if (data) {
@@ -57,10 +57,10 @@ const WaterQualityMonitor = () => {
                 label: "TDS (ppm)",
                 data: tdsData,
                 fill: false,
-                borderColor: "rgba(255, 99, 132, 0.9)", // Bright pink-red color
-                backgroundColor: "rgba(255, 99, 132, 0.3)", // Transparent fill for data points
-                pointBackgroundColor: "rgba(255, 99, 132, 1)", // Solid color for points
-                pointBorderColor: "rgba(255, 255, 255, 0.8)", // Light border for points
+                borderColor: "rgba(255, 99, 132, 0.9)", 
+                backgroundColor: "rgba(255, 99, 132, 0.3)", 
+                pointBackgroundColor: "rgba(255, 99, 132, 1)", 
+                pointBorderColor: "rgba(255, 255, 255, 0.8)",
                 tension: 0.3,
             },
         ],
@@ -73,10 +73,10 @@ const WaterQualityMonitor = () => {
                 label: "Turbidity (NTU)",
                 data: turbidityData,
                 fill: false,
-                borderColor: "rgba(255, 206, 86, 0.9)", // Bright yellow color
-                backgroundColor: "rgba(255, 206, 86, 0.3)", // Transparent fill for data points
-                pointBackgroundColor: "rgba(255, 206, 86, 1)", // Solid color for points
-                pointBorderColor: "rgba(255, 255, 255, 0.8)", // Light border for points
+                borderColor: "rgba(255, 206, 86, 0.9)", 
+                backgroundColor: "rgba(255, 206, 86, 0.3)", 
+                pointBackgroundColor: "rgba(255, 206, 86, 1)", 
+                pointBorderColor: "rgba(255, 255, 255, 0.8)", 
                 tension: 0.3,
             },
         ],
@@ -89,41 +89,41 @@ const WaterQualityMonitor = () => {
                 title: {
                     display: true,
                     text: "Time",
-                    color: "#333333", // Dark grey color for x-axis title
+                    color: "#333333", 
                     font: {
                         size: 14,
                         weight: 'bold'
                     }
                 },
                 ticks: {
-                    color: "#333333", // Dark grey color for x-axis labels
+                    color: "#333333", 
                 },
             },
             y: {
                 title: {
                     display: true,
                     text: "Value",
-                    color: "#333333", // Dark grey color for y-axis title
+                    color: "#333333",
                     font: {
                         size: 14,
                         weight: 'bold'
                     }
                 },
                 ticks: {
-                    color: "#333333", // Dark grey color for y-axis labels
+                    color: "#333333", 
                 },
             },
         },
         plugins: {
             legend: {
                 labels: {
-                    color: "#333333", // Dark grey color for legend text
+                    color: "#333333", 
                 }
             },
             tooltip: {
-                titleColor: "#333333", // Dark grey color for tooltip title
-                bodyColor: "#333333", // Dark grey color for tooltip body text
-                backgroundColor: "rgba(255, 255, 255, 0.7)", // Light background for tooltip
+                titleColor: "#333333", 
+                bodyColor: "#333333", 
+                backgroundColor: "rgba(255, 255, 255, 0.7)",
             }
         },
     };
